@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { type_secound } from "@/functions/fonts";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Dogs Next",
@@ -14,7 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={type_secound.variable}>{children}</body>
+      <body className={type_secound.variable}>
+        <div className="App">
+          <Header />
+          <main className="AppBody">{children}</main>
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }
