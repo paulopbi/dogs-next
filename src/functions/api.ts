@@ -112,17 +112,9 @@ export function PHOTO_DELETE(id) {
   };
 }
 
-//NOTE se a senha for perdida, envia um email para criar uma nova
-export function PASSWORD_LOST(body) {
+export function PASSWORD_LOST() {
   return {
     url: API_URL + "/api/password/lost",
-    options: {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(body),
-    },
   };
 }
 
