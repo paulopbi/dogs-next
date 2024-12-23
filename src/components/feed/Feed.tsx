@@ -1,4 +1,4 @@
-import { Photo } from "@/actions/photo-get";
+import { Photo } from "@/actions/photos-get";
 import FeedPhotos from "./FeedPhotos";
 
 function Feed({ photos }: { photos: Photo[] }) {
