@@ -7,14 +7,14 @@ function FeedPhotos({ photos }: { photos: Photo[] }) {
   return (
     <ul className={`${styles.feed} animeLeft`}>
       {photos.map((photo, i) => (
-        <li key={photo.id + i} className={styles.photo}>
+        <li className={styles.photo} key={photo.id + i}>
           <Link href={`/foto/${photo.id}`} scroll={false}>
             <Image
               src={photo.src}
-              alt={photo.title}
               width={1500}
               height={1500}
-              sizes="80"
+              alt={photo.title}
+              sizes="80vw"
             />
             <span className={styles.visualizacao}>{photo.acessos}</span>
           </Link>
