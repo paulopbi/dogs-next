@@ -1,14 +1,12 @@
 //@ts-nocheck
 export const API_URL = "https://dogsapi.origamid.dev/json";
 
-//NOTE envia o token para o servidor
 export function TOKEN_POST() {
   return {
     url: API_URL + "/jwt-auth/v1/token",
   };
 }
 
-//NOTE valida o token quando for feita uma postagem
 export function TOKEN_VALIDATE_POST(token) {
   return {
     url: API_URL + "/jwt-auth/v1/token/validate",
@@ -53,25 +51,18 @@ export function PHOTOS_GET({
   };
 }
 
-//NOTE pega uma foto com a id específica
-export function PHOTO_GET(id) {
+export function PHOTO_GET(id: string) {
   return {
     url: `${API_URL}/api/photo/${id}`,
-    options: {
-      method: "GET",
-      cache: "no-store",
-    },
   };
 }
 
-//NOTE pega a foto pela ID
 export function PHOTO_ID_GET(id) {
   return {
     url: `${API_URL}/api/photo/${id}`,
   };
 }
 
-//NOTE retorna os dados já formatados para fazer a requisição na api
 export function COMMENT_POST(id, body) {
   return {
     url: `${API_URL}/api/comment/${id}`,
@@ -87,7 +78,6 @@ export function COMMENT_POST(id, body) {
   };
 }
 
-//NOTE deleta a foto se o id do usuário for o dono dela
 export function PHOTO_DELETE(id) {
   return {
     url: `${API_URL}/api/photo/${id}`,
