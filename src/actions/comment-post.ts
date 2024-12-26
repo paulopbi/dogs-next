@@ -1,9 +1,9 @@
 "use server";
 import { COMMENT_POST } from "@/functions/api";
 import { cookies } from "next/headers";
-import apiError from "@/functions/api-error";
 import { revalidateTag } from "next/cache";
-import { redirect } from "next/navigation";
+import { Comment } from "./photo-get";
+import apiError from "@/functions/api-error";
 
 export default async function commentPost(state: {}, formdata: FormData) {
   const token = cookies().get("token")?.value;

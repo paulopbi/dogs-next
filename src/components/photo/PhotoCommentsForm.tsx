@@ -1,12 +1,11 @@
 "use client";
-
+import React from "react";
 import { useFormState, useFormStatus } from "react-dom";
 import { Comment } from "@/actions/photo-get";
 import styles from "./PhotoCommentsForm.module.css";
 import EnviarIcon from "@/icons/EnviarIcon";
 import ErrorMessage from "@/components/helper/ErrorMessage";
 import commentPost from "@/actions/comment-post";
-import React from "react";
 
 function FormButton() {
   const { pending } = useFormStatus();

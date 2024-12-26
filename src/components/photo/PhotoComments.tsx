@@ -1,10 +1,9 @@
 "use client";
-
 import React from "react";
-import PhotoCommentsForm from "@/components/photo/PhotoCommentsForm";
-import styles from "./PhotoComments.module.css";
 import { useUser } from "@/context/userContext";
 import { Comment } from "@/actions/photo-get";
+import PhotoCommentsForm from "@/components/photo/PhotoCommentsForm";
+import styles from "./PhotoComments.module.css";
 
 const PhotoComments = (props: {
   single: boolean;

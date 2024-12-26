@@ -1,8 +1,7 @@
 "use client";
-
+import React from "react";
 import { useUser } from "@/context/userContext";
 import { PhotoData } from "@/actions/photo-get";
-import React from "react";
 import PhotoComments from "./PhotoComments";
 import styles from "./PhotoContent.module.css";
 import PhotoDelete from "./PhotoDelete";
