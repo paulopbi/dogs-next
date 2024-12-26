@@ -54,9 +54,11 @@
 ## 🚀 Rodando O Projeto Localmente
 
 1. Clone o repositório
-   ```bash
-   git clone https://github.com/your-username/dogs.git
-   ```
+
+```bash
+git clone https://github.com/your-username/dogs.git
+```
+
 2. Entre na pasta
 
 ```bash
