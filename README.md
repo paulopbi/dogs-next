@@ -56,7 +56,7 @@
 1. Clone o repositório
 
 ```bash
-git clone https://github.com/your-username/dogs.git
+git clone https://github.com/paulopbi/dogs-next.git
 ```
 
 2. Entre na pasta
