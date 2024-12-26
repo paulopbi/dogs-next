@@ -1,6 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
-import { type_secound } from "@/functions/fonts";
+import { type_second } from "@/functions/fonts";
 import { UserContextProvider } from "@/context/userContext";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -22,7 +22,7 @@ export default async function RootLayout({
   const { data: user } = await userGet();
   return (
     <html lang="pt-BR">
-      <body className={type_secound.variable}>
+      <body className={type_second.variable}>
         <UserContextProvider user={user}>
           <div className="App">
             <Header />

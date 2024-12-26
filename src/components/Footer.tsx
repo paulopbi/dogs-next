@@ -10,7 +10,7 @@ function Footer() {
         width={28}
         height={22}
       />
-      <p>Dogs - Desenvolvido por Paulo Victor, Alguns direitos reservados</p>
+      <p>Dogs - Desenvolvido por Paulo Victor, Alguns direitos reservados.</p>
     </footer>
   );
 }
