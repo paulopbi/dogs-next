@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import { type_second } from "@/functions/fonts";
 import { UserContextProvider } from "@/context/userContext";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -31,6 +32,7 @@ export default async function RootLayout({
             <Footer />
           </div>
         </UserContextProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
