@@ -3,12 +3,12 @@
 }
 
 body {
-  --type-first: Helvetica, Arial, sans-serif;
-  --type-second: var(--type-secound-spectral), Georgia;
-  font-family: var(--type-first);
   padding-top: 4rem;
   margin: 0px;
   color: #333;
+  --type-first: Helvetica, Arial, sans-serif;
+  --type-second: var(--type-second-spectral), Georgia;
+  font-family: var(--type-first);
 }
 
 h1,
@@ -27,9 +27,9 @@ li {
 }
 
 img {
+  height: auto;
   display: block;
   max-width: 100%;
-  height: auto;
 }
 
 button,
@@ -105,17 +105,17 @@ a {
 }
 
 .button {
-  min-width: 8rem;
   font-size: 1rem;
   font-family: var(--type-first);
+  cursor: pointer;
   border: none;
   border-radius: 0.4rem;
-  cursor: pointer;
+  background: #fb1;
+  color: #764701;
+  min-width: 8rem;
   padding: 0.8rem 1.2rem;
   box-sizing: border-box;
   transition: 0.1s;
-  background-color: #fb1;
-  color: #764701;
 }
 
 .button:hover,
